@@ -1,6 +1,39 @@
 class Main {
   public static void main(String[] args) {
     System.out.println("Hello world!");
+    // String CONCATENATION in java
+    // There are 2 ways of concatenating strings in java
+    
+    //Type 1 : By + (String concatenation) operator
+    //Type 2 : By concat() method
+    // let's look at the first type by + (String concatenation) operator
+    //Java string concatenation operator (+) is used to addd strings. Example
+
+    class testStringConcat1 {
+      public static void main (String args []){
+        String s = "Birth"+"main";
+        System.out.println(s);
+        //It should print Birthday
+        //A piece of java compiler transform the above to this:
+        String s = (new StringBuilder()).append("day").toString();
+
+        //String concatenation by using concat() method
+        // The string concat () method contatenates the specific string to the end of the current string. Here is the syntax
+        public String concat (String another)
+
+       // now let's see an example
+       class testStringConcat2{
+         public static void main (String[]){
+           String s1 = "Birth";
+           String s2 = "day";
+           String s3 = s1 concat (s2);
+           System.out.println(s3);
+         }
+       }
+      }
+
+
+   
     word1="Hello";
     // Hello has 5 characters
     tempstring1="He";
@@ -8,5 +41,6 @@ class Main {
     tempString3="o";
     //Simple additiom of characters
     finalword = tempstring1 + tempString2 + temptString3;
+    
   }
 }
