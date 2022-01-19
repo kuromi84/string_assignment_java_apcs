@@ -1,0 +1,12 @@
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+    word1="Hello";
+    // Hello has 5 characters
+    tempstring1="He";
+    tempString2="ll";
+    tempString3="o";
+    //Simple additiom of characters
+    finalword = tempstring1 + tempString2 + temptString3;
+  }
+}
